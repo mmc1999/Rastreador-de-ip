@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <header class="header">
+    <p class="titulo">SPLI</p>
+    <p class="titulo">TTER</p>
+  </header>
+  <main class="main">
+    <form class="seccionCalculadora">
+      <div class="contieneLasCuentas">
+        <div class="div Bill">
+          <h2 class="todosH2">Bill</h2>
+          <img src="./images/icon-dollar.svg" alt="Icono del dolar" class="iconoDolar">
+          <input type="text" class="inputCuenta" placeholder="0" value="">
+        </div>
+        <div class="div seleccionarPropina">
+          <h2 class="todosH2">Select Tip %</h2>
+          <button type="button" class="botonPropina botonPropina5">5%</button>
+          <button type="button" class="botonPropina botonPropina10">10%</button>
+          <button type="button" class="botonPropina botonPropina15">15%</button>
+          <button type="button" class="botonPropina botonPropina25">25%</button>
+          <button type="button" class="botonPropina botonPropina50">50%</button>
+          <input type="text" placeholder="Custom" class="botonPropina inputElegirPropina" value="">
+        </div>
+        <div class="div SeleccionarPersonas">
+          <h2 class="todosH2">Number of People</h2>
+          <img src="./images/icon-person.svg" alt="Icono de una persona" class="iconoDolar">
+          <input type="text" placeholder="Number Person" class="inputCuenta inputCuentaPersona" value="">
+        </div>
+      </div>
+      <article class="articleResultado">
+        <div class="divPropXPersona">
+          <div class="divTotalXPersona">
+            <h2 class="divTotalXPersonaH2">Tip</h2>
+            <p class="divTotalXPersonaP">/ person</p>
+          </div>
+          <div class="divPropinaPorPersona">
+            <p class="parrafodePropina propPersona"></p>
+          </div>
+        </div>
+        <div class="divPropXPersona">
+          <div class="divTotalXPersona">
+            <h2 class="divTotalXPersonaH2">Total</h2>
+            <p class="divTotalXPersonaP">/ person</p>
+          </div>
+          <div class="divTotalPorPersona">
+            <p class="parrafodePropina totalPersona"></p>
+          </div>
+        </div>
+        <div class="divBotonReset">
+          <button type="reset" class="botonReset">RESET</button>
+        </div>
+      </article>
+    </form>
+  </main>
+  <footer>
+    <div class=" attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Matias Centorbi</a>.
+    </div>
+  </footer>
+  <script src="js/index.js"></script>
+</body>
+</html>
