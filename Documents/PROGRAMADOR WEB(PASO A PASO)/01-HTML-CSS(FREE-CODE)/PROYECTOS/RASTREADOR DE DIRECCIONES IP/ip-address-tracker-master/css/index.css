@@ -1,0 +1,168 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    margin: 0px;
+    background-image: url("/images/pattern-bg.png");
+    background-repeat: no-repeat;
+    font-family: 'Rubik', sans-serif;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.primerSection {
+    width: 100%;
+}
+h1 {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: -0.232143px;
+    color: #FFFFFF;
+    text-align: center;
+}
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    box-shadow: 0px 50px 50px -25px rgba(0, 0, 0, 0.0983665);
+    border-radius: 15px;
+    width: 80%;
+    margin: 0px auto;
+    position: relative;
+}
+input {
+    border: none;
+    outline: none;
+    margin-left: 10px;
+}
+input::placeholder {
+    font-size: 10px;
+}
+.boton {
+    background-color: black;
+    padding: 10px;  
+    border-top-right-radius: 10px;  
+    border-bottom-right-radius: 10px;  
+    border: none;
+    outline: none;
+    width: 40px;
+
+}
+.segundoSection {
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    width: 80%;
+    margin: 30px auto;
+    padding: 15px;
+    z-index: 100;
+    top: 100px;
+    box-shadow: 0px 50px 50px -25px rgba(0, 0, 0, 0.0983665);
+}
+.pFijas {
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 1.45833px;
+    text-transform: uppercase;
+    color: #2C2C2C;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-bottom: 2px;
+}
+.pVariables {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.178571px;
+    color: #2C2C2C;
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+.tercerSection {
+    width: 100%;
+
+}
+/* mapa*/
+#mapid { 
+    height: 400px; 
+    top: 140px;
+    z-index: 2;
+}
+/*-----------------             FOOTER              ---------------------------*/
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+/*----------------------------------------  DESKTOP -------------------------------------*/
+@media all and (min-width:900px) {
+    body {
+        background-size: 100% 200px;
+    }
+    form {
+        width: 40%;
+    }
+    input {
+        width: 100%;
+    }
+    input::placeholder {
+        font-size: 18px;
+        line-height: 21px;
+        color: #2C2C2C;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        
+    }
+    .segundoSection {
+        width: 70%;
+        display: grid;
+        grid-template-columns:  repeat(4, 1fr);
+        top: 115px;
+        padding: 25px 20px;
+    }
+    .segundoSection div {
+        text-align: start;
+        position: relative;
+    }
+    .linea {
+        top: 5px;
+        left: -10px;
+        width: 1px;
+        height: 80%;
+        background-color: rgba(0, 0, 0, 0.151);
+        position: absolute;
+    }
+    .pFijas {
+        text-align: start;
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+    .pVariables {
+        text-align: start;
+        font-size: 100%;
+        margin: 0%;
+        width: 80%;
+    }
+    
+    #mapid {
+        top: 80px;
+        height: 600px;
+        margin-top: 0px;
+    }
+}
